@@ -2,6 +2,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
+import { useRef } from 'react';
 
 import {useState, useEffect} from "react";
 import logo from '../assets/img/logo.svg';
@@ -14,7 +15,7 @@ import navIcon3 from '../assets/img/nav-icon3.svg';
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
-
+  const scrollRef = useRef(null);
 
   useEffect(() => {
     const onScroll = () => {
@@ -31,9 +32,17 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [])
 
+
+
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }
+
+  const scrollToBottom = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  };
 
   return (
     <Navbar expand="lg" className= {scrolled ? "scrolled": ""}>

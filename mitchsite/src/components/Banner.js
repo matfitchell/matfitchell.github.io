@@ -50,15 +50,15 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Mitchell Mercer:`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "Blank", "Blank" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Mitchell Mercer:`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Software Engineer", "Blank", "Blank" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Highly motivated California State Universtiy Alumnus excited to make an impact in Tech</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  {/* <button onClick={() => console.log('connect')}>"Let’s Connect <ArrowRightCircle size={25} /></button> */}
               </div>}
             </TrackVisibility>
           </Col>
