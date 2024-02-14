@@ -1,6 +1,7 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import java from "../assets/img/java.svg";
+import python from "../assets/img/python.svg";
+import swift from "../assets/img/swift.svg";
+import react from "../assets/img/reactlogo.svg"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -38,19 +39,19 @@ export const Skills = () => {
                         {/* <p>I pocess various skills built up during personal projects.</p> */}
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                {/* <img src={meter1} alt="Image" /> */}
+                                <img src={java} alt="Image" />
                                 <h5>Programming</h5>
                             </div>
                             <div className="item">
-                                {/* <img src={meter2} alt="Image" /> */}
+                                <img src={python} alt="Image" />
                                 <h5>Project Planning</h5>
                             </div>
                             <div className="item">
-                                {/* <img src={meter3} alt="Image" /> */}
+                                <img src={swift} alt="Image" />
                                 <h5>Testing</h5>
                             </div>
                             <div className="item">
-                                {/* <img src={meter1} alt="Image" /> */}
+                                <img src={react} alt="Image" />
                                 <h5>Documentation</h5>
                             </div>
                         </Carousel>

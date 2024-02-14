@@ -5,11 +5,10 @@ import Container from 'react-bootstrap/Container';
 import { useRef } from 'react';
 
 import {useState, useEffect} from "react";
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/diving-goggles-svgrepo-com.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github-mark-white.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
-import ResumeLink from '../assets/mm-dev.pdf';
+
 
 
 
@@ -49,7 +48,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className= {scrolled ? "scrolled": ""}>
       <Container>
         <Navbar.Brand href="#home">
-            <img src ={logo} alt="logo" />
+            <img src ={logo} alt="logo" style={{ width: '100px', height: 'auto' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
            <span className='navbar-toggler-icon'></span>

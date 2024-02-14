@@ -297,23 +297,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Skills Css ************/
+
+/* TODO FIX THIS SO TEXT IS BLACK */
 .skill {
   padding: 0 0 50px 0;
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #dfdddd;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
 }
 .skill h2 {
+  color: #000;
 	font-size: 45px;
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
+    color: #000;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
