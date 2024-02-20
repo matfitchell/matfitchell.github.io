@@ -70,11 +70,11 @@ export const NavBar = () => {
                   <span>Let's Connect</span>
                 </button>
             </a>
-            <a href="../mm_resume_updated.pdf" target="_blank" className="resume-button">
+            {/* <a href="../mm_resume_updated.pdf" target="_blank" className="resume-button">
               <button>
                 <span>Resume</span>
               </button>
-            </a>
+            </a> */}
           </span>
         </Navbar.Collapse>
       </Container>
