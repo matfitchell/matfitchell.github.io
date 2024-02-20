@@ -301,10 +301,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* TODO FIX THIS SO TEXT IS BLACK */
 .skill {
   padding: 0 0 50px 0;
-  position: relative;
+  /* position: relative; */
 }
 .skill-bx {
-  background: #dfdddd;
+  background: #a0a0a0;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -322,6 +322,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     line-height: 1.5em;
     margin: 14px 0 75px 0;
 }
+
+.skill-text{
+  color:black
+}
+
 .skill-slider {
   width: 80%;
   margin: 0 auto;
